@@ -1,4 +1,4 @@
-public class Produto{
+public class Produto implements Comparable<Produto>{
     private String id, nome;
     double preco;
 
@@ -39,5 +39,10 @@ public class Produto{
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    @Override
+    public int compareTo(Produto o) {
+        return 0;
     }
 }
